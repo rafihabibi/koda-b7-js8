@@ -1,9 +1,9 @@
-const movie = {
+Const movie = {
     id: 1,
     title: "Avengers",
     Image: "Alaska",
     genre: ["Action", "Comedy"],
-    cast: [{name: "Tom Cruise"}, {role: "Hulk"}],
+    cast: [{name: "Tom Cruise", role: "Hulk"}],
     getNameInfo: function() {
        return `Judul Film: ${this.title}, Gmbar Film: ${this.Image}, Genre Film: ${this.genre}`
     },
@@ -22,7 +22,7 @@ console.log(movie.getNameInfo());
 
 console.log(`Nama Cast: ${movie.getNameCast()}`);
 
-this.newTitle = "Avengers age of ultron";
-console.log(`New Title: ${this.newTitle}`);
-this.newImage = "Full Robot";
-console.log(`New Image: ${this.newImage}`);
+movie.setNameTitle("Avengers Age of Ultron");
+movie.setNameImage("Full Robot")
+
+console.log(`Setelah Update Judul dan Gambar: ${movie.getNameInfo()}`);
