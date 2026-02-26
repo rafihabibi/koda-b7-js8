@@ -3,7 +3,7 @@ const movie = {
     title: "Avengers",
     Image: "Alaska",
     genre: ["Action", "Comedy"],
-    cast: [{name: "Tom Cruise"}, {role: "Hulk"}],
+    cast: [{name: "Tom Cruise", role: "Hulk"}],
     getNameJudul: function() {
         return this.title;
     },
@@ -32,3 +32,4 @@ this.newTitle = "Avengers age of ultron";
 console.log(`New Title: ${this.newTitle}`);
 this.newImage = "Full Robot";
 console.log(`New Image: ${this.newImage}`);
+
